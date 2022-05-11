@@ -1,0 +1,255 @@
+/******************************************************************
+Site Name: 
+Author: Irvine Acosta
+
+Stylesheet: Tablet & Small Desktop Stylesheet
+
+Here's where you can start getting into the good stuff.
+This size will work on iPads, other tablets, and desktops.
+So you can start working with more styles, background images,
+and other resources. You'll also notice the grid starts to
+come into play. Have fun!
+
+******************************************************************/
+
+
+.wrap {
+	padding-left:40px;
+	padding-right:40px;
+	position: relative;
+}
+
+
+.headline {
+	margin-bottom:0;
+}
+
+
+.big-card {
+	margin-left:-24px;
+	margin-right:-24px;
+	@include border-radius(10px);
+}
+
+#main-content {
+	padding:40px 0;
+}
+
+.fab {
+	right:24px;
+	bottom:24px;
+}
+
+.headline.with-actions {
+	@include clearfix;
+	
+	
+	.actions.search-only {
+		width: 30%;
+		float: right;
+		
+	}
+}
+
+form.split-col {
+	
+	@include clearfix;
+	
+	.input-group {
+		width: 47.5%;
+		float: left;
+		padding-bottom:16px;
+	}
+	
+	.input-group:nth-child(2n) {
+		float: right;
+		
+	}	
+	
+	.button {
+		clear: both;
+		float: left;
+	}
+	
+	.error-message {
+		position: absolute;
+	}
+	
+	
+}
+
+
+
+
+.directory {
+	
+//always show the info (legacy)	
+/* 
+	.card {
+		@include clearfix;
+		.details {
+			width: 38%;
+			float: left;
+		}
+		.more {
+			display: block !important;
+			margin-top:-32px;
+			width: 60%;
+			float: right;
+			border-top:0;
+			@include border-radius(0);
+			@include border-right-radius(6px);
+		}
+		
+		.more-toggle {
+			display: none;
+		}
+	}
+*/
+
+	.more {
+		padding-left:72px;
+		padding-right:72px;
+	}
+
+}
+
+.headline.search-only{
+	@include clearfix;
+	
+	.text {
+		width: 68%;
+		float: left;
+		margin-top:4px;
+		
+	}
+	
+	.actions {
+		margin-top:0;
+		width: 30%;
+		float: right;
+	}
+}
+
+
+.client-agenda {
+	.card {
+		.more {
+			padding:16px 72px;
+		}
+	}
+	
+	.event.card {
+		.more {
+			padding-left:104px;
+		}
+	}
+}
+
+
+.card {
+	.full-event-details {
+		background:#fafafa;
+		padding: 16px 88px 16px;
+	}
+}
+
+
+#bottom-bar.new-question {
+	.next {
+		top:0;
+		right:40px;
+	}
+	
+}
+
+
+
+.new-event {
+	
+	.event-photo {
+		@include clearfix;
+		
+		.thumbnail {
+			float: left;
+		}
+		
+		.input-group {
+			float: left;
+			margin-left:16px;
+			min-width: 180px;
+			//margin-top:8px;
+		}
+	}
+}
+
+.wrap.appointments_headline {
+	display: flex;
+	align-items: center;
+
+	.arrow_right {
+		display: block;
+		margin: 24px;
+	}
+
+	.person {
+		.profile-pic {
+			width: 56px;
+			height: 56px;
+			border-radius: 28px;
+			line-height: 56px;
+		}
+		.profile-pic:before {
+			font-size: 30px !important;
+		}
+	}
+
+	.details {
+		padding: 0;
+		margin: 0 5px;
+
+		.arrow_down {
+			display: none;
+		}
+
+		.status {
+			margin: 0 5px;
+
+			h6 {
+				font-weight: bold;
+
+				.tag {
+					font-weight: normal;
+					display: block;
+				}
+			}
+
+			.status_icon {
+				position: relative;
+				margin-right: 10px;
+				left: auto;
+				top: auto;
+				width: 40px;
+				height: 40px;
+			}
+
+			.status_icon:before {
+				font-size: 24px !important;
+			}
+		}
+	}
+}
+
+.registration-card {
+	width: 600px;
+}
+
+.verification-card {
+	width: 400px;
+}
+
+.passcode-form {
+	.verification-card {
+		width: 600px;
+	}
+}

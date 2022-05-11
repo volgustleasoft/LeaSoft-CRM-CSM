@@ -1,0 +1,187 @@
+/******************************************************************
+Site Name: 
+Author: Irvine Acosta
+
+Stylesheet: Tablet & Small Desktop Stylesheet
+
+Here's where you can start getting into the good stuff.
+This size will work on iPads, other tablets, and desktops.
+So you can start working with more styles, background images,
+and other resources. You'll also notice the grid starts to
+come into play. Have fun!
+
+******************************************************************/
+
+
+/*
+IMPORTANT NOTE ABOUT SASS 3.3 & UP 
+You can't use @extend within media queries
+anymore, so just be aware that if you drop
+them in here, they won't work.
+*/
+
+
+#mobile-header {
+	display: none;
+}
+
+
+#main-menu {
+	
+	background:none !important ;
+	
+	.drawer-closer {
+		display: none;
+	 
+	}
+
+	.drawer {
+		left: 0 !important;
+    }
+}
+
+#main-content,
+.headline,
+#bottom-bar {
+	margin-left: $main-menu-width;
+}
+
+.modal {
+	padding-left:$main-menu-width;
+}
+
+.wrap {
+/*
+	padding-left:56px;
+	padding-right:56px;
+*/
+}
+
+.new-event {
+	.split-col {
+		.col {
+			width: 45%;
+		}
+	}
+}
+
+.split-col {
+	
+	@include clearfix;
+	
+	.col {
+		width: 47.5%;
+		float: left;
+	}
+	
+	.col:nth-child(2n) {
+		float: right;
+	}
+}
+
+
+.split-col.split-40-60{
+	.col {
+		width: 40%;
+		float: left;
+	}
+	
+	.col:nth-child(2n) {
+		width: 55%;
+		float: right;
+	}
+}
+
+.headline.with-actions {
+	@include clearfix;
+	
+	.text {
+		width: 58%;
+		float: left;
+		margin-top:4px;
+		
+	}
+	
+	.actions {
+		margin-top:0;
+		width: 40%;
+		float: right;
+		
+		.tabs {
+			float: right;
+		}
+	}
+	.short {
+		width: 30%;
+	}
+	
+	.multi-line.text ~ .actions {
+		padding-top:8px;
+	}
+	
+	.translate-y {
+		transform: translate(0, 16px);
+	}
+}
+
+
+
+/******** Specific Content *********/
+
+.weekly-schedule {
+	
+	ol.schedule-overview {
+		li {
+			
+			a:hover {
+			}
+		}
+	}
+}
+
+
+.calendar {
+	background: #F7F7F7;
+	border: 1px solid $outline;
+	border-radius: 5px;
+	padding:12px;
+	max-width: 340px;
+	
+	.switcher {
+		.days {
+			display: none;
+		}
+		
+		.months {
+			display: block;
+		}
+	}
+	
+	.full-cal {
+		display: block;
+	}
+}
+
+.question.card {
+	@include clearfix();
+	
+	.details {
+		float: left;
+		width:38%
+	}
+	.more-toggle {
+		display: none;
+	}
+	.more {
+		float: right;
+		display: block !important;
+		width: 60%;
+		margin:-32px 0 0 0;
+		border: none;
+		@include border-radius(5px);
+		transform: translateY(0);
+	}
+	
+}
+
+

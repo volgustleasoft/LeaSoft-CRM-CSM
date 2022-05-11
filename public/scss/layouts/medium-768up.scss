@@ -1,0 +1,157 @@
+#main-content {
+    padding: 40px 0;
+}
+
+/* ------------------------------------------------------ */
+
+.headline {
+    margin-bottom: 0;
+}
+
+.headline.with-actions {
+    .wrap {
+        align-items: center;
+        flex-flow: row;
+        min-height: 38px;
+    }
+
+    .actions {
+        margin-top: 0;
+        text-align: right;
+        width: 40%;
+
+        .tabs {
+            justify-content: right;
+        }
+    }
+
+    .title {
+        margin-top: 0;
+        width: 60%;
+    }
+}
+
+.wrap {
+    padding-left: 40px;
+    padding-right: 40px;
+    position: relative;
+}
+
+.big-card {
+    border-radius: 10px;
+}
+
+/* ------------------------------------------------------ */
+
+.card.todo-list {
+    .timetable {
+        li {
+            align-items: center;
+            justify-content: space-between;
+            flex-flow: row;
+
+            > .button {
+                margin-top: 0;
+            }
+
+            .task {
+                align-items: center;
+                flex-flow: row;
+
+                .work-time {
+                    margin-right: 24px;
+                }
+            }
+
+            .report {
+                margin: 0;
+            }
+        }
+    }
+
+    .details {
+        flex-wrap: nowrap;
+
+        .preview, .progress {
+            flex-shrink: 0;
+        }
+
+        .details-info {
+            width: 100%;
+        }
+
+        .progress {
+            width: 25%;
+            margin: 0;
+        }
+    }
+}
+
+.card.question {
+    .header, .details {
+        width: 40%;
+    }
+
+    > .content {
+        margin-top: -89px;
+        margin-left: 40%;
+    }
+}
+
+/* ------------------------------------------------------ */
+
+.details-with-labels {
+    li {
+        flex-flow: row;
+
+        > div.label {
+            margin-right: 16px;
+            width: 135px
+        }
+    }
+}
+
+.split-col.split-40-60 {
+    .details-with-labels.time-slots {
+        .time-slot-details {
+            > .title {
+                margin-top: 0;
+            }
+
+            > .details-with-labels > li {
+                margin-bottom: 10px;
+                flex-flow: column;
+
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+
+            > .buttons-group {
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+
+/* ------------------------------------------------------ */
+
+.card.signup, .card.terms-conditions {
+    width: 600px;
+
+    .footer {
+        padding: 24px 100px;
+    }
+}
+
+.card.terms-conditions {
+    .footer {
+        padding: 24px;
+    }
+}
+
+.card.signup.signup-small, .card.pincode-small {
+    .footer {
+        padding: 24px;
+    }
+}

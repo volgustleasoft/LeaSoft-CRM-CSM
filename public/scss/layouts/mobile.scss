@@ -1,0 +1,22 @@
+.card {
+    .header {
+        align-items: flex-start;
+        flex-flow: column;
+
+        span.date + span:before {
+            display: none;
+        }
+
+        span.tag {
+            position: absolute;
+            top: 0;
+            right: 30px;
+        }
+
+        > i {
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+    }
+}

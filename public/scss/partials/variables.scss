@@ -1,0 +1,47 @@
+/** COMMON **/
+$menu-width:    220px;
+
+/** COLORS **/
+$dark-gray:     #333333;
+$mid-gray:      #666666;
+$light-gray:    #999999;
+$outline:       #E4E4E4;
+$error-text:    #E9001D;
+
+/* Brand Colors */
+/* UP = brighter, DOWN = darker */
+
+/* Purple */
+$color1:        #951FEA;
+$color1-up:     #AE3DFF;
+$color1-down:   #6D0EB1;
+
+/* Green */
+$color2:        #94D005;
+$color2-up:     #A2DD14;
+$color2-down:   #6C9900;
+
+/* Orange */
+$color3:        #F99300;
+$color3-up:     #FFAA2F;
+$color3-down:   #D46E35;
+
+/* Pink */
+$color4:        #FF6AC0;
+$color4-up:     #FF95D2;
+$color4-down:   #EC4DA9;
+
+/* Blue */
+$color5:        #77B0FF;
+$color5-up:     #8BBCFF;
+$color5-down:   #779FEE;
+
+/** FONTS **/
+$body-font:     "Roboto", sans-serif;
+$headline-font: "Roboto", sans-serif;
+
+$light:         300;
+$regular:       400;
+$medium:        500;
+$semi-bold:     500;
+$bold:          600;

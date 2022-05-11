@@ -1,0 +1,43 @@
+.wrap {
+    padding-right: 24px;
+    padding-left: 24px;
+}
+
+/* ------------------------------------------------------ */
+
+.card {
+    .content {
+        padding: 16px 72px;
+    }
+}
+
+/* ------------------------------------------------------ */
+
+.card.terms-conditions, .card.pincode-prompt {
+    .buttons-group {
+        flex-flow: row;
+        margin: 0;
+
+        .button {
+            margin: 0 16px 0 0;
+            max-width: none;
+            width: auto;
+
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+    }
+}
+
+/* ------------------------------------------------------ */
+
+.signup-information {
+    .buttons-group {
+        flex-flow: row;
+
+        > *:first-child {
+            margin-bottom: 0;
+        }
+    }
+}
